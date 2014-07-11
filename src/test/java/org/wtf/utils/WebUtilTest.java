@@ -17,7 +17,7 @@ import static org.wtf.utils.WTFUtil.*;
 public class WebUtilTest extends WTFTest{
 
   public static final String SERVER = "http://web-auto.github.io/wtf-util/test/";
-  public static final String CLICK_FILE = SERVER + "click.html";
+  public static final String CLICK_FILE = SERVER + "page.html";
 
   public static final String parentClassName = "parent";
 
