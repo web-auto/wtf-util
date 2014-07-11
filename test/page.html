@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Click test file</title>
+<head>
+<body>
+  <div class="parent">
+	<input class="button1" type="button" id="button1" onclick="javascript:this.value = 'clicked';" value="Button 1" /><br>
+	<input class="buttonRemovefromDom" type="button" id="buttonRemovefromDom" onclick="javascript:this.parentNode.removeChild(this)" value="Button Remove from Dom" /><br>
+	<input class="buttonInvisible" type="button" id="buttonInvisible" value="inVissible Button" style="display:none;" /><br>
+	<input type="checkbox" class="checkboxSelected" checked="">Do you like summer?<br>
+	<input type="checkbox" class="checkboxNotSelected">Do you like winter?<br>
+	<input class="buttonHover" type="button" id="buttonHover" onmouseover="javascript:this.value = 'hoverd';" value="Button Hover" /><br>
+	 First name: <input type="text" class="textbox1"><br>
+	 Clear this text: <input type="text" class="textboxClear" value="Test clear"><br>
+	 <div type="text" class="divWithText">Hello</div><br>
+	 <div type="text" class="divWithCustomAttribute" qaID="qaid"></div><br>
+	<select class="select">
+	  <option value="volvo">Volvo</option>
+	  <option value="saab">Saab</option>
+	  <option value="mercedes">Mercedes</option>
+	  <option value="audi">Audi</option>
+	</select> 
+	 
+  </div>
+</body>
+</html>
+
