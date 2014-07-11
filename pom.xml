@@ -12,6 +12,14 @@
       <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
 
+ <repositories>
+     <repository>
+         <id>my-repo</id>
+         <url>https://github.com/web-auto/wtf-maven-repo/raw/master</url>
+     </repository>
+ </repositories>
+
+
   <dependencies>
     <dependency>
       <groupId>org.wtf</groupId>
