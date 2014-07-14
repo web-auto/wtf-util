@@ -8,7 +8,8 @@ wtf-util
 The WTF Util is a collection of util methods for webdriver testing. Util methods that makes the webdriver testing on browser  much easier and stable.
 
 ### Util method pattern
-All our util method supports 4 unique method patterns.
+All our util methods supports 4 unique method patterns. All 4 variations does the same thing but it provides options like explicit wait condition to use, parent element to isolate the DOM lookup etc..
+
 ```
 1. utilMethodName(Webdriver driver, By by);
 2. utilMethodName(Webdriver driver, WebdriverWait wait, By by);
