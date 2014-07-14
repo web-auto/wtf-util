@@ -88,6 +88,35 @@ public void testAttributeValuePresent() {
 
 ---------------------------------------
 
+
+<a name="clear" />
+### clear
+###### clear(driver, by)
+###### clear(driver, wait, by)
+###### clear(driver, parent, by)
+###### clear(driver, wait, parent, by)
+
+Clear the text field element using the given `by`.
+
+__Arguments__
+
+* `driver` - An instance of Webdriver
+* `wait` - An instance of WebdriverWait (optional) 
+* `parent` - The parent element to look in (optional)
+* `by` - A Webdriver By instance
+
+__Example__
+
+```java
+public void testClear() {
+  Webdriver driver = new FirefoxDriver();
+  driver.get("http://www.example.com");
+  WTFUtil.clear(driver, By.className("some-class-name"));
+}
+```
+
+---------------------------------------
+
 ### Team
 
  * Author & Lead Maintainer: [Venkat Sundramurthy](https://github.com/vsundramurthy)
