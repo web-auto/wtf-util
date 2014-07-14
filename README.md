@@ -65,7 +65,7 @@ All our util methods supports 4 unique method patterns. All 4 variations does th
 ###### attributeValuePresent(driver, parent, by, attr, value)
 ###### attributeValuePresent(driver, wait, parent, by, attr, value)
 
-Find and return boolean if the given `attr` name and `value` found on the given element using `by`.
+Find and return boolean if the given `attr` name and `value` found on aelement using the given `by`.
 
 __Arguments__
 
