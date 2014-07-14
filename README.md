@@ -81,7 +81,7 @@ __Example__
 ```java
 public void testAttributeValuePresent() {
   Webdriver driver = new FirefoxDriver();
-  driver.get('http://www.example.com');
+  driver.get("http://www.example.com");
   Assert.assertTrue(attributeValuePresent(driver, By.className('some-class-name'), "myattr", "my-attr-value"));
 }
 ```
