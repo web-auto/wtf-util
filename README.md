@@ -5,7 +5,7 @@ wtf-util
 [![Coverage Status](https://coveralls.io/repos/web-auto/wtf-util/badge.png?branch=master)](https://coveralls.io/r/web-auto/wtf-util?branch=master)
 
 ### What is WTF Util?
-The WTF Util is a collection of util methods for writing webdriver tests on Java. Util methods that makes the webdriver testing on browser more reliable, easier and stable.
+The WTF Util is a collection of util methods for writing webdriver tests on Java. These util methods will makes the webdriver testing on browsers more reliable, easier and stable.
 
 ### Util method pattern
 All our util methods supports 4 unique method patterns. All 4 variations does the same thing but it provides options like explicit wait condition to use, options to pass parent element to isolate or minimize the DOM lookup etc..
