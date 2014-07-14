@@ -205,6 +205,36 @@ public void testFindElements() {
 
 ---------------------------------------
 
+
+<a name="getAttributeValue" />
+### GetAttributeValue
+###### getAttributeValue(driver, by, attr)
+###### getAttributeValue(driver, wait, by, attr)
+###### getAttributeValue(driver, parent, by, attr)
+###### getAttributeValue(driver, wait, parent, by, attr)
+
+Find and returns an attrubute value for the given attribute name on a WebElement using `by`.
+
+__Arguments__
+
+* `driver` - An instance of Webdriver
+* `wait` - An instance of WebdriverWait (optional) 
+* `parent` - The parent element to look in (optional)
+* `by` - A Webdriver By instance
+* `attr` - An attribut to find
+
+
+__Example__
+
+```java
+public void testGetAttributeValue() {
+  Webdriver driver = new FirefoxDriver();
+  driver.get("http://www.example.com");
+  String attrVal = WTFUtil.getAttributeValue(driver, By.className("some-class-name"), "some-attribute");
+}
+```
+
+---------------------------------------
 ### Team
 
  * Author & Lead Maintainer: [Venkat Sundramurthy](https://github.com/vsundramurthy)
