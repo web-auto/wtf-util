@@ -380,6 +380,180 @@ public void testInvisible() {
 ```
 
 ---------------------------------------
+
+
+<a name="notPresent" />
+### NotPresent
+###### notPresent(driver, by)
+###### notPresent(driver, wait, by)
+###### notPresent(driver, parent, by)
+###### notPresent(driver, wait, parent, by)
+
+Determines the given element is not present on the DOM using `by`.
+
+__Arguments__
+
+* `driver` - An instance of Webdriver
+* `wait` - An instance of WebdriverWait (optional) 
+* `parent` - The parent element to look in (optional)
+* `by` - A Webdriver By instance
+
+__Example__
+
+```java
+public void testNotPresent() {
+  Webdriver driver = new FirefoxDriver();
+  driver.get("http://www.example.com");
+  Boolean visible = WTFUtil.notPresent(driver, By.className("some-class-name"));
+}
+```
+
+---------------------------------------
+
+
+<a name="notSelected" />
+### NotSelected
+###### notSelected(driver, by)
+###### notSelected(driver, wait, by)
+###### notSelected(driver, parent, by)
+###### notSelected(driver, wait, parent, by)
+
+Determines the given item is not selected yet on a Select WebElement using `by`.
+
+__Arguments__
+
+* `driver` - An instance of Webdriver
+* `wait` - An instance of WebdriverWait (optional) 
+* `parent` - The parent element to look in (optional)
+* `by` - A Webdriver By instance
+
+__Example__
+
+```java
+public void testNotSelected() {
+  Webdriver driver = new FirefoxDriver();
+  driver.get("http://www.example.com");
+  Boolean notSlected = WTFUtil.notSelected(driver, By.className("some-class-name"));
+}
+```
+
+---------------------------------------
+
+
+<a name="present" />
+### Present
+###### present(driver, by)
+###### present(driver, wait, by)
+###### present(driver, parent, by)
+###### present(driver, wait, parent, by)
+
+Determines the WebElement is present on DOM using `by`.
+
+__Arguments__
+
+* `driver` - An instance of Webdriver
+* `wait` - An instance of WebdriverWait (optional) 
+* `parent` - The parent element to look in (optional)
+* `by` - A Webdriver By instance
+
+__Example__
+
+```java
+public void testPresent() {
+  Webdriver driver = new FirefoxDriver();
+  driver.get("http://www.example.com");
+  Boolean visible = WTFUtil.present(driver, By.className("some-class-name"));
+}
+```
+
+---------------------------------------
+
+
+<a name="selected" />
+### Selected
+###### selected(driver, by)
+###### selected(driver, wait, by)
+###### selected(driver, parent, by)
+###### selected(driver, wait, parent, by)
+
+Determines the given item is selected yet on a Select WebElement using `by`.
+
+__Arguments__
+
+* `driver` - An instance of Webdriver
+* `wait` - An instance of WebdriverWait (optional) 
+* `parent` - The parent element to look in (optional)
+* `by` - A Webdriver By instance
+
+__Example__
+
+```java
+public void testSelected() {
+  Webdriver driver = new FirefoxDriver();
+  driver.get("http://www.example.com");
+  Boolean selected = WTFUtil.notSelected(driver, By.className("some-class-name"));
+}
+```
+
+---------------------------------------
+
+
+<a name="textNotPresent" />
+### TextNotPresent
+###### textNotPresent(driver, by)
+###### textNotPresent(driver, wait, by)
+###### textNotPresent(driver, parent, by)
+###### textNotPresent(driver, wait, parent, by)
+
+Determines the given text is not present on the WebElement using `by`.
+
+__Arguments__
+
+* `driver` - An instance of Webdriver
+* `wait` - An instance of WebdriverWait (optional) 
+* `parent` - The parent element to look in (optional)
+* `by` - A Webdriver By instance
+
+__Example__
+
+```java
+public void testTextNotPresent() {
+  Webdriver driver = new FirefoxDriver();
+  driver.get("http://www.example.com");
+  Boolean textPresent = WTFUtil.TextNotPresent(driver, By.className("some-class-name"));
+}
+```
+
+---------------------------------------
+
+
+<a name="textPresent" />
+### TextPresent
+###### textPresent(driver, by)
+###### textPresent(driver, wait, by)
+###### textPresent(driver, parent, by)
+###### textPresent(driver, wait, parent, by)
+
+Determines the given text is present on the WebElement using `by`.
+
+__Arguments__
+
+* `driver` - An instance of Webdriver
+* `wait` - An instance of WebdriverWait (optional) 
+* `parent` - The parent element to look in (optional)
+* `by` - A Webdriver By instance
+
+__Example__
+
+```java
+public void testTextPresent() {
+  Webdriver driver = new FirefoxDriver();
+  driver.get("http://www.example.com");
+  Boolean textPresent = WTFUtil.notSelected(driver, By.className("some-class-name"));
+}
+```
+
+---------------------------------------
 ### Team
 
  * Author & Lead Maintainer: [Venkat Sundramurthy](https://github.com/vsundramurthy)
