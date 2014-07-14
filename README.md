@@ -7,6 +7,37 @@ wtf-util
 ### What is WTF Util?
 The WTF Util is a collection of util methods for webdriver testing. Util methods that makes the webdriver testing on browser  much easier and stable.
 
+### Util method pattern
+All our util method supports 4 unique method patterns.
+```
+1. utilMethodName(Webdriver driver, By by);
+2. utilMethodName(Webdriver driver, WebdriverWait wait, By by);
+3. utilMethodName(Webdriver, WebElement ParenetElement, By by);
+4. utilMethodName(Webdriver driver, WebdriverWait wait,  WebElement ParenetElement, By by);
+```
+
+### Util Methods
+* [`attributeValuePresent`](#attributeValuePresent)
+* [`clear`](#clear)
+* [`click`](#click)
+* [`findElement`](#findElement)
+* [`findElements`](#findElements)
+* [`getAttributeValue`](#getAttributeValue)
+* [`getSelectElement`](#getSelectElement)
+* [`getText`](#getText)
+* [`getValue`](#getValue)
+* [`hover`](#hover)
+* [`invisible`](#invisible)
+* [`notPresent`](#notPresent)
+* [`notSelected`](#notSelected)
+* [`present`](#present)
+* [`selected`](#selected)
+* [`textNotPresent`](#textNotPresent)
+* [`textPresent`](#textPresent)
+* [`type`](#type)
+* [`visible`](#visible)
+
+
 ### Maven repository and Dependency
 ```xml
  <repositories>
