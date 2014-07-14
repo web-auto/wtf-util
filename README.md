@@ -235,6 +235,151 @@ public void testGetAttributeValue() {
 ```
 
 ---------------------------------------
+
+
+<a name="getSelectElement" />
+### GetSelectElement
+###### getSelectElement(driver, by)
+###### getSelectElement(driver, wait, by)
+###### getSelectElement(driver, parent, by)
+###### getSelectElement(driver, wait, parent, by)
+
+Find and returns the Webdriver Select object using `by`.
+
+__Arguments__
+
+* `driver` - An instance of Webdriver
+* `wait` - An instance of WebdriverWait (optional) 
+* `parent` - The parent element to look in (optional)
+* `by` - A Webdriver By instance
+
+__Example__
+
+```java
+public void testGetSelectElement() {
+  Webdriver driver = new FirefoxDriver();
+  driver.get("http://www.example.com");
+  Select select = WTFUtil.getSelectElement(driver, By.className("some-class-name"));
+}
+```
+
+---------------------------------------
+
+
+<a name="getText" />
+### GetText
+###### getText(driver, by)
+###### getText(driver, wait, by)
+###### getText(driver, parent, by)
+###### getText(driver, wait, parent, by)
+
+Returns the text value of an element using `by`.
+
+__Arguments__
+
+* `driver` - An instance of Webdriver
+* `wait` - An instance of WebdriverWait (optional) 
+* `parent` - The parent element to look in (optional)
+* `by` - A Webdriver By instance
+
+__Example__
+
+```java
+public void testGetText() {
+  Webdriver driver = new FirefoxDriver();
+  driver.get("http://www.example.com");
+  String text = WTFUtil.getText(driver, By.className("some-class-name"));
+}
+```
+
+---------------------------------------
+
+
+<a name="getValue" />
+### GetValue
+###### getValue(driver, by)
+###### getValue(driver, wait, by)
+###### getValue(driver, parent, by)
+###### getValue(driver, wait, parent, by)
+
+Returns the value from an element using `by`.
+
+__Arguments__
+
+* `driver` - An instance of Webdriver
+* `wait` - An instance of WebdriverWait (optional) 
+* `parent` - The parent element to look in (optional)
+* `by` - A Webdriver By instance
+
+__Example__
+
+```java
+public void testValue() {
+  Webdriver driver = new FirefoxDriver();
+  driver.get("http://www.example.com");
+  String value = WTFUtil.getValue(driver, By.className("some-class-name"));
+}
+```
+
+---------------------------------------
+
+
+<a name="hover" />
+### Hover
+###### hover(driver, by)
+###### hover(driver, wait, by)
+###### hover(driver, parent, by)
+###### hover(driver, wait, parent, by)
+
+Hover on an element using `by`.
+
+__Arguments__
+
+* `driver` - An instance of Webdriver
+* `wait` - An instance of WebdriverWait (optional) 
+* `parent` - The parent element to look in (optional)
+* `by` - A Webdriver By instance
+
+__Example__
+
+```java
+public void testHover() {
+  Webdriver driver = new FirefoxDriver();
+  driver.get("http://www.example.com");
+  WTFUtil.hover(driver, By.className("some-class-name"));
+}
+```
+
+---------------------------------------
+
+
+<a name="invisible" />
+### Invisible
+###### invisible(driver, by)
+###### invisible(driver, wait, by)
+###### invisible(driver, parent, by)
+###### invisible(driver, wait, parent, by)
+
+Returns boolean if an element id not visible using `by`.
+
+__Arguments__
+
+* `driver` - An instance of Webdriver
+* `wait` - An instance of WebdriverWait (optional) 
+* `parent` - The parent element to look in (optional)
+* `by` - A Webdriver By instance
+
+__Example__
+
+```java
+public void testInvisible() {
+  Webdriver driver = new FirefoxDriver();
+  driver.get("http://www.example.com");
+  Boolean visible = WTFUtil.invisible(driver, By.className("some-class-name"));
+}
+```
+
+---------------------------------------
 ### Team
 
  * Author & Lead Maintainer: [Venkat Sundramurthy](https://github.com/vsundramurthy)
