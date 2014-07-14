@@ -170,7 +170,36 @@ __Example__
 public void testFindElement() {
   Webdriver driver = new FirefoxDriver();
   driver.get("http://www.example.com");
-  WTFUtil.findElement(driver, By.className("some-class-name"));
+  WebElement webElement = WTFUtil.findElement(driver, By.className("some-class-name"));
+}
+```
+
+---------------------------------------
+
+
+<a name="findElements" />
+### FindElements
+###### findElements(driver, by)
+###### findElements(driver, wait, by)
+###### findElements(driver, parent, by)
+###### findElements(driver, wait, parent, by)
+
+Find and returns a list of WebElement using `by`.
+
+__Arguments__
+
+* `driver` - An instance of Webdriver
+* `wait` - An instance of WebdriverWait (optional) 
+* `parent` - The parent element to look in (optional)
+* `by` - A Webdriver By instance
+
+__Example__
+
+```java
+public void testFindElements() {
+  Webdriver driver = new FirefoxDriver();
+  driver.get("http://www.example.com");
+  WebElement [] webElements = WTFUtil.findElements(driver, By.className("some-class-name"));
 }
 ```
 
