@@ -19,6 +19,12 @@
      </repository>
  </repositories>
 
+  <distributionManagement>
+    <repository>
+      <id>wtf-maven-repo</id>
+      <url>https://github.com/web-auto/wtf-maven-repo</url>
+    </repository>
+  </distributionManagement>
 
   <dependencies>
     <dependency>

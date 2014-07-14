@@ -1,3 +1,7 @@
+/**
+ * Copyright (C) 2014 WTF org.
+ */
+
 package org.wtf.utils;
 
 import java.util.List;
@@ -12,7 +16,12 @@ import org.openqa.selenium.interactions.Actions;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 import static org.wtf.utils.WTFExpectedConditions.*;
 
-
+/**
+ * WTF Utils. Collection of util methods for invoking browser automation calls
+ * more easier and much stable.
+ *
+ * @author venkatesan.sundramurthy@gmail.com (Venkatesan Sundramurthy)
+ */
 public class WTFUtil {
 
   public static Long WAIT_TIMEOUT_IN_SECONDS = 30L;
