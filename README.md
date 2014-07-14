@@ -58,6 +58,35 @@ All our util methods supports 4 unique method patterns. All 4 variations does th
   </dependencies>
 ```
 
+<a name="attributeValuePresent" />
+###attributeValuePresent
+###### attributeValuePresent(driver, by, attr, value)
+###### attributeValuePresent(driver, wait, by, attr, value)
+###### attributeValuePresent(driver, parent, by, attr, value)
+###### attributeValuePresent(driver, wait, parent, by, attr, value)
+
+Find and return the `attr` value on the matching elemente using `by'.
+
+__Arguments__
+
+* `driver` - An instance of Webdriver.
+* `wait` - An instance of WebdriverWait.  (Optional) 
+* `parent` - The parent element to look in. (Optional)
+* `by` - A Webdriver By instance.
+* `attr` - The attribut to lookup.
+* `value` - The value to match.
+__Example__
+
+```java
+public void testHasAttribut() {
+  Webdriver driver = new FirefoxDriver();
+  driver.get('http://www.example.com');
+  Assert.assertTrue(attributeValuePresent(driver, By.className('some-class-name'), "myattr", "my-attr-value"));
+}
+```
+
+---------------------------------------
+
 ### Team
 
  * Author & Lead Maintainer: [Venkat Sundramurthy](https://github.com/vsundramurthy)
