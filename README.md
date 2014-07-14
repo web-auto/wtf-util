@@ -5,7 +5,7 @@ wtf-util
 [![Coverage Status](https://coveralls.io/repos/web-auto/wtf-util/badge.png?branch=master)](https://coveralls.io/r/web-auto/wtf-util?branch=master)
 
 ### What is WTF Util?
-The WTF Util is a collection of util methods for webdriver testing on Java. Util methods that makes the webdriver testing on browser  much easier and stable.
+The WTF Util is a collection of util methods for webdriver testing on Java. Util methods that makes the webdriver testing on browser more reliable, easier and stable.
 
 ### Util method pattern
 All our util methods supports 4 unique method patterns. All 4 variations does the same thing but it provides options like explicit wait condition to use, options to pass parent element to isolate or minimize the DOM lookup etc..
@@ -142,6 +142,35 @@ public void testClick() {
   Webdriver driver = new FirefoxDriver();
   driver.get("http://www.example.com");
   WTFUtil.click(driver, By.className("some-class-name"));
+}
+```
+
+---------------------------------------
+
+
+<a name="findElement" />
+### FindElement
+###### findElement(driver, by)
+###### findElement(driver, wait, by)
+###### findElement(driver, parent, by)
+###### findElement(driver, wait, parent, by)
+
+Find and returns a WebElement using `by`.
+
+__Arguments__
+
+* `driver` - An instance of Webdriver
+* `wait` - An instance of WebdriverWait (optional) 
+* `parent` - The parent element to look in (optional)
+* `by` - A Webdriver By instance
+
+__Example__
+
+```java
+public void testFindElement() {
+  Webdriver driver = new FirefoxDriver();
+  driver.get("http://www.example.com");
+  WTFUtil.findElement(driver, By.className("some-class-name"));
 }
 ```
 
