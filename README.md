@@ -70,8 +70,8 @@ Find and return boolean if the given `attr` name and `value` found on the given 
 __Arguments__
 
 * `driver` - An instance of Webdriver
-* `wait` - An instance of WebdriverWait (Optional) 
-* `parent` - The parent element to look in (Optional)
+* `wait` - An instance of WebdriverWait (optional) 
+* `parent` - The parent element to look in (optional)
 * `by` - A Webdriver By instance
 * `attr` - The attribut to lookup
 * `value` - The value to match
