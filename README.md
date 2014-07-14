@@ -82,7 +82,7 @@ __Example__
 public void testAttributeValuePresent() {
   Webdriver driver = new FirefoxDriver();
   driver.get("http://www.example.com");
-  Assert.assertTrue(attributeValuePresent(driver, By.className('some-class-name'), "myattr", "my-attr-value"));
+  Assert.assertTrue(WTFUtil.attributeValuePresent(driver, By.className('some-class-name'), "myattr", "my-attr-value"));
 }
 ```
 
