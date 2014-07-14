@@ -375,7 +375,7 @@ __Example__
 public void testInvisible() {
   Webdriver driver = new FirefoxDriver();
   driver.get("http://www.example.com");
-  Boolean visible = WTFUtil.invisible(driver, By.className("some-class-name"));
+  Boolean inVisible = WTFUtil.invisible(driver, By.className("some-class-name"));
 }
 ```
 
@@ -500,10 +500,10 @@ public void testSelected() {
 
 <a name="textNotPresent" />
 ### TextNotPresent
-###### textNotPresent(driver, by)
-###### textNotPresent(driver, wait, by)
-###### textNotPresent(driver, parent, by)
-###### textNotPresent(driver, wait, parent, by)
+###### textNotPresent(driver, by, text)
+###### textNotPresent(driver, wait, by, text)
+###### textNotPresent(driver, parent, by, text)
+###### textNotPresent(driver, wait, parent, by, text)
 
 Determines the given text is not present on the WebElement using `by`.
 
@@ -513,6 +513,7 @@ __Arguments__
 * `wait` - An instance of WebdriverWait (optional) 
 * `parent` - The parent element to look in (optional)
 * `by` - A Webdriver By instance
+* `text` - A Webdriver By instance
 
 __Example__
 
@@ -520,7 +521,7 @@ __Example__
 public void testTextNotPresent() {
   Webdriver driver = new FirefoxDriver();
   driver.get("http://www.example.com");
-  Boolean textPresent = WTFUtil.TextNotPresent(driver, By.className("some-class-name"));
+  Boolean textPresent = WTFUtil.TextNotPresent(driver, By.className("some-class-name"), "some text");
 }
 ```
 
@@ -529,12 +530,70 @@ public void testTextNotPresent() {
 
 <a name="textPresent" />
 ### TextPresent
-###### textPresent(driver, by)
-###### textPresent(driver, wait, by)
-###### textPresent(driver, parent, by)
-###### textPresent(driver, wait, parent, by)
+###### textPresent(driver, by, text)
+###### textPresent(driver, wait, by, text)
+###### textPresent(driver, parent, by, text)
+###### textPresent(driver, wait, parent, by, text)
 
 Determines the given text is present on the WebElement using `by`.
+
+__Arguments__
+
+* `driver` - An instance of Webdriver
+* `wait` - An instance of WebdriverWait (optional) 
+* `parent` - The parent element to look in (optional)
+* `by` - A Webdriver By instance
+* `text` - A Webdriver By instance
+
+__Example__
+
+```java
+public void testTextPresent() {
+  Webdriver driver = new FirefoxDriver();
+  driver.get("http://www.example.com");
+  Boolean textPresent = WTFUtil.notSelected(driver, By.className("some-class-name"), "some text");
+}
+```
+
+---------------------------------------
+
+
+<a name="type" />
+### Type
+###### type(driver, by, text)
+###### type(driver, wait, by, text)
+###### type(driver, parent, by, text)
+###### type(driver, wait, parent, by, text)
+
+Types the give text on a WebElement using `by`.
+
+__Arguments__
+
+* `driver` - An instance of Webdriver
+* `wait` - An instance of WebdriverWait (optional) 
+* `parent` - The parent element to look in (optional)
+* `by` - A Webdriver By instance
+* `text` - A Webdriver By instance
+
+__Example__
+
+```java
+public void testType() {
+  Webdriver driver = new FirefoxDriver();
+  driver.get("http://www.example.com");
+  WTFUtil.type(driver, By.className("some-class-name"), "some text..");
+}
+```
+
+---------------------------------------
+<a name="visible" />
+### Visible
+###### visible(driver, by)
+###### visible(driver, wait, by)
+###### visible(driver, parent, by)
+###### visible(driver, wait, parent, by)
+
+Returns boolean if an element is visible using `by`.
 
 __Arguments__
 
@@ -546,14 +605,15 @@ __Arguments__
 __Example__
 
 ```java
-public void testTextPresent() {
+public void testVisible() {
   Webdriver driver = new FirefoxDriver();
   driver.get("http://www.example.com");
-  Boolean textPresent = WTFUtil.notSelected(driver, By.className("some-class-name"));
+  Boolean visible = WTFUtil.visible(driver, By.className("some-class-name"));
 }
 ```
 
 ---------------------------------------
+
 ### Team
 
  * Author & Lead Maintainer: [Venkat Sundramurthy](https://github.com/vsundramurthy)
