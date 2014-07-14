@@ -39,7 +39,7 @@ All our util methods supports 4 unique method patterns. All 4 variations does th
 * [`visible`](#visible)
 
 
-### Start using in your Webdriver project (Maven repo and Deps)
+### Start using in your Webdriver project ( Maven Repo. and Deps. )
 ```xml
  <repositories>
      <repository>
