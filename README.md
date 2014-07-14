@@ -360,7 +360,7 @@ public void testHover() {
 ###### invisible(driver, parent, by)
 ###### invisible(driver, wait, parent, by)
 
-Returns boolean if an element id not visible using `by`.
+Returns boolean if an element is not visible using `by`.
 
 __Arguments__
 
