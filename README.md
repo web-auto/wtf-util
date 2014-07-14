@@ -59,7 +59,7 @@ All our util methods supports 4 unique method patterns. All 4 variations does th
 ```
 
 <a name="attributeValuePresent" />
-###attributeValuePresent
+### AttributeValuePresent
 ###### attributeValuePresent(driver, by, attr, value)
 ###### attributeValuePresent(driver, wait, by, attr, value)
 ###### attributeValuePresent(driver, parent, by, attr, value)
@@ -91,13 +91,13 @@ public void testAttributeValuePresent() {
 
 
 <a name="clear" />
-### clear
+### Clear
 ###### clear(driver, by)
 ###### clear(driver, wait, by)
 ###### clear(driver, parent, by)
 ###### clear(driver, wait, parent, by)
 
-Clear the text field element using the given `by`.
+Clear the text field element using `by`.
 
 __Arguments__
 
@@ -113,6 +113,35 @@ public void testClear() {
   Webdriver driver = new FirefoxDriver();
   driver.get("http://www.example.com");
   WTFUtil.clear(driver, By.className("some-class-name"));
+}
+```
+
+---------------------------------------
+
+
+<a name="click" />
+### Click
+###### click(driver, by)
+###### click(driver, wait, by)
+###### click(driver, parent, by)
+###### click(driver, wait, parent, by)
+
+Click on an element using `by`.
+
+__Arguments__
+
+* `driver` - An instance of Webdriver
+* `wait` - An instance of WebdriverWait (optional) 
+* `parent` - The parent element to look in (optional)
+* `by` - A Webdriver By instance
+
+__Example__
+
+```java
+public void testClick() {
+  Webdriver driver = new FirefoxDriver();
+  driver.get("http://www.example.com");
+  WTFUtil.click(driver, By.className("some-class-name"));
 }
 ```
 
