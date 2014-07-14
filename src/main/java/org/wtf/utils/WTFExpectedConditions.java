@@ -1,3 +1,7 @@
+/**
+ * Copyright (C) 2014 WTF org.
+ */
+
 package org.wtf.utils;
 
 import org.openqa.selenium.By;
@@ -13,6 +17,11 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
+/**
+ * WTF Webdriver expected conditions. A helper class for the WTFUtil.
+ *
+ * @author venkatesan.sundramurthy@gmail.com (Venkatesan Sundramurthy)
+ */
 public class WTFExpectedConditions {
 
   private final static Logger log = Logger.getLogger(WTFExpectedConditions.class.getName());
